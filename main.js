@@ -1,5 +1,11 @@
 function chunkyMonkey(values, size) {
-   //  write code here.
+   let start = 0
+   let newArray = []
+   while (start < values.length){
+      newArray.push(values.slice(start, start + size))
+      start += size
+   }
+   return newArray
 }
 
 
